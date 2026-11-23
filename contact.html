@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ - Nguyễn Quốc Anh</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">QuocAnh.dev</a>
+    <div class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Liên hệ</a>
+      <button type="button" id="darkModeBtn" class="theme-toggle">Dark Mode</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title reveal">Liên hệ</h1>
+    <p class="page-subtitle reveal">Gửi lời nhắn cho mình qua biểu mẫu dưới đây.</p>
+
+    <form action="https://formspree.io/f/mppdoqng" method="POST" class="contact-form reveal">
+      <div class="form-group">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="name" placeholder="Nhập họ và tên" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nhapemail@domain.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung tin nhắn..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Gửi liên hệ</button>
+    </form>
+  </main>
+
+  <footer class="footer reveal">
+    <p>© 2026 Nguyễn Quốc Anh</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
